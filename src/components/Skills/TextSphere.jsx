@@ -24,7 +24,7 @@ const TextSphere = () => {
     ]
 
     const options = {
-      radius: windowWidth < 600 ? 120 : 300,
+      radius: windowWidth < 921 ? 120 : 300,
       maxSpeed: 'normal',
       initSpeed: 'normal',
       keep: true,

@@ -54,7 +54,10 @@ const Contact = () => {
             excited about the prospect of contributing my skills to your team
             and making meaningful impact to your projects. <br />
             Send me a message via contact form or find me on &nbsp;
-            <a href="https://www.linkedin.com/in/%D0%B8%D0%B2%D0%B0%D0%BD-%D0%B1%D0%B0%D0%BB%D0%B8%D0%BD%D0%BE%D0%B2-6a0145271/">
+            <a
+              href="https://www.linkedin.com/in/%D0%B8%D0%B2%D0%B0%D0%BD-%D0%B1%D0%B0%D0%BB%D0%B8%D0%BD%D0%BE%D0%B2-6a0145271/"
+              target="_black"
+            >
               LinkedIn
             </a>
             . <br /> Sincerely, Ivan

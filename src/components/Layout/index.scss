@@ -180,11 +180,6 @@
   }
 }
 
-// @media screen and (max-width: 1330px) {
-//   .page {
-//     position: initial;
-//   }
-// }
 @media screen and (max-width: 1200px) {
   .container.contact-page {
     .text-zone {
@@ -195,12 +190,95 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-  .page {
+@media screen and (max-width: 950px) {
+  .container {
+    &.contact-page,
+    &.about-page,
+    &.skills-page {
+      .text-zone {
+        h1 {
+          font-size: 51px;
+        }
+      }
+    }
+  }
+  div.container.about-page,
+  div.container.skills-page {
     position: initial;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    .text-zone {
+      h1 {
+        left: 0;
+        margin-left: 0;
+        margin-bottom: 5px;
+      }
+      h3 {
+        margin-top: 45px;
+        left: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .tags {
+    left: 10px;
   }
 
-  .container {
+  .top-tags {
+    top: 0;
+  }
+
+  .bottom-tags {
+    bottom: auto;
+    left: 26px;
+  }
+
+  .about-page,
+  .contact-page,
+  .skills-page {
+    .text-zone {
+      h1 {
+        &::before {
+          left: -10px;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  .container.contact-page,
+  .container.about-page,
+  .container.skills-page {
+    margin-top: 50px;
+  }
+
+  .container.skills-page {
+    div {
+      .text-sphere {
+        margin-left: 260px;
+        margin-top: 210px;
+      }
+    }
+  }
+
+  .container.container.home-page {
+    position: initial;
+
+    h1 {
+      &::before {
+        margin-top: 0;
+        left: 15px;
+      }
+    }
+  }
+  .container.contact-page {
+    margin-top: 265px;
     position: initial;
     height: 100vh;
     display: flex;
@@ -208,12 +286,74 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    .text-zone {
+      p {
+        margin-top: 60px;
+        margin-left: 0;
+
+        &::before {
+          display: none;
+        }
+        &::after {
+          display: none;
+        }
+      }
+      h1 {
+        margin-bottom: 5px;
+        left: -13px;
+      }
+      form {
+        margin-top: 40px;
+        ul {
+          li {
+            input {
+              height: 30px;
+            }
+            textarea {
+              min-height: 130px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tags {
+    left: 10px;
+  }
+
+  .top-tags {
+    top: 103px;
+  }
+
+  .bottom-tags {
+    bottom: -170px;
+    left: 26px;
+  }
+  .page {
+    position: initial;
+    height: auto;
+  }
+
+  .container {
+    margin-top: 20px;
+    position: initial;
+    height: 100vh;
+    display: flex;
+    min-height: auto;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
 
     &.contact-page,
     &.about-page,
     &.skills-page {
       .text-zone {
+        height: auto;
         position: initial;
         transform: none;
         width: 100%;
@@ -223,10 +363,12 @@
 
         h1 {
           &::before {
-            display: none;
+            left: 0;
+            top: 10px;
           }
           &::after {
-            display: none;
+            left: -23px;
+            bottom: -10px;
           }
         }
 
@@ -274,15 +416,25 @@
       }
     }
   }
+  .container.skills-page {
+    div {
+      .text-sphere {
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+    }
+  }
 
   div.container.about-page,
   div.container.skills-page {
+    margin-top: 25px;
     position: initial;
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 
     .text-zone {
       h1 {
@@ -293,9 +445,10 @@
       h3 {
         margin: 0;
         left: 0;
+        margin-top: 25px;
       }
       p {
-        margin-top: 0px;
+        margin-top: 40px;
         margin-bottom: 150px;
         font-size: 12px;
         margin-left: 0;
@@ -303,18 +456,34 @@
     }
   }
 
+  .container.home-page {
+    .text-zone {
+      h1 {
+        &::before {
+          left: 10px;
+          top: -5px;
+        }
+        &::after {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
   .container.contact-page {
-    justify-content: flex-start;
+    margin-top: 0;
+    justify-content: center;
     .text-zone {
       p {
-        margin-top: 0;
+        margin-top: 20px;
         margin-left: 0;
       }
       h1 {
-        margin-bottom: 5px;
-        left: 0px;
+        margin-bottom: 60px;
+        left: -21px;
       }
       form {
+        margin-top: 40px;
         ul {
           li {
             input {

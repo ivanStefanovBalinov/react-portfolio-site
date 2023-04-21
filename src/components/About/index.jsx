@@ -46,7 +46,9 @@ const About = () => {
             employee and team member. <br />
             <br />
             Visit my &nbsp;
-            <a href="https://github.com/ivanStefanovBalinov">GitHub</a>
+            <a href="https://github.com/ivanStefanovBalinov" target="_black">
+              GitHub
+            </a>
           </p>
         </div>
         <div className="stage-cube-cont">

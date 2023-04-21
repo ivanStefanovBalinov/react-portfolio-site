@@ -72,6 +72,13 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  .stage-cube-cont {
+    top: 70px;
+    overflow: visible;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .stage-cube-cont {
     position: initial;
@@ -83,27 +90,27 @@
     .cube-spinner {
       transform-origin: 100px 100px 0;
       div {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
         font-size: 90px;
       }
       .face1 {
-        transform: translateZ(60px);
+        transform: translateZ(70px);
       }
       .face2 {
-        transform: rotateY(90deg) translateZ(60px);
+        transform: rotateY(90deg) translateZ(70px);
       }
       .face3 {
-        transform: rotateY(90deg) rotateX(90deg) translateZ(60px);
+        transform: rotateY(90deg) rotateX(90deg) translateZ(70px);
       }
       .face4 {
-        transform: rotateY(180deg) rotateZ(90deg) translateZ(60px);
+        transform: rotateY(180deg) rotateZ(90deg) translateZ(70px);
       }
       .face5 {
-        transform: rotateY(-90deg) rotateZ(90deg) translateZ(60px);
+        transform: rotateY(-90deg) rotateZ(90deg) translateZ(70px);
       }
       .face6 {
-        transform: rotateX(-90deg) translateZ(60px);
+        transform: rotateX(-90deg) translateZ(70px);
       }
     }
   }
